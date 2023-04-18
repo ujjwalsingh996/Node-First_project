@@ -8,7 +8,7 @@ const requestHandler = (req, res) => {
       if (err) {
         console.log(err);
       }
-      console.log("data from file >>>>>>", data);
+      console.log("data from file >>>>>", data);
       res.write("<html>");
       res.write("<head><title>Enter Message</title><head>");
       res.write(`<body>${data}</body>`);
@@ -38,7 +38,7 @@ const requestHandler = (req, res) => {
     res.setHeader("Content-Type", "text/html");
     res.write("<html>");
     res.write("<head><title>My First Page</title><head>");
-    res.write("<body><h1>Hello from my Node.js Server!</h1></body>");
+    res.write("<body><h1>Hello from my Node.js!</h1></body>");
     res.write("</html>");
     res.end();
   }
